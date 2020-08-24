@@ -1,0 +1,45 @@
+%container {
+  width: 80%;
+  padding: 0 10%;
+
+}
+
+%flexDisplay {
+  display: flex;
+  justify-content: space-between;
+}
+
+%social-block {
+    margin-top: 20px;
+
+    i {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #eeeeee;
+      text-align: center;
+      line-height: 30px;
+      margin-right: 5px;
+      font-size: 12px;
+      color: #000;
+      cursor: pointer;
+
+      &:hover {color:$mainColor; }
+    }
+  }
+
+%heading-with-line {
+  color: #000;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background: $mainColor;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+  }
+}
